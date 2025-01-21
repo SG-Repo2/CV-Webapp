@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-sea-green: #20B2AA;
+  --color-light-red: #FF6B6B;
+  --color-purple: #9B59B6;
+  --color-white: #FFFFFF;
+}
+
+body {
+  @apply bg-gray-50 text-gray-900 antialiased;
+}
+
+.card-sea-green {
+  background: linear-gradient(135deg, var(--color-sea-green), #2CC7BF);
+}
+
+.card-light-red {
+  background: linear-gradient(135deg, var(--color-light-red), #FF8080);
+}
+
+.card-purple {
+  background: linear-gradient(135deg, var(--color-purple), #A66BBE);
+}
+
+.card-yellow {
+  background: linear-gradient(135deg, #FFB347, #FFD080);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400;
+}
